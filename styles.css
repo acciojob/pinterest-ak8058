@@ -10,19 +10,19 @@ body,html{
 }
 .hero{
   height:100vh;
-height:100%;
-	width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.hero img{
-  width: 100%;
-  height: 100%;
-  object-fit:cover;
+img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
 }
-
+.image_container{
+	width:300px;
+	height:200px;
+}
 .text_container{
   flex: 1;
   display: flex;
