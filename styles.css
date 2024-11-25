@@ -6,43 +6,45 @@
 }
 .hero{
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
-    position: relative;
-    overflow: hidden;
 }
 .hero-image{
+   flex: 2;
+   overflow: hidden;
+}
+.hero-image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    z-index: 0;
 }
 .hero-content{
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: white;
 }
 .hero-content h1{
     font-size: 3rem;
     margin-bottom: 1rem;
-	color:black;
+    color: black;
 }
 .hero-content p{
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    color: grey;
 }
 .explore-btn{
     padding: 0.8rem 2rem;
-    background-color: #007BFF;
+    background-color: red;
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 .explore-btn:hover{
-    background-color: #0056b3;
+    background-color: darkred;
 }
